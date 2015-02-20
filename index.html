@@ -15,29 +15,35 @@
                                 {{#link-to 'index' class="navbar-brand"}}ServiceDeskPlus{{/link-to}}
                             </div>
                             <ul class="nav navbar-nav navbar-right">
-                                    <li>Username_LicenseInfo</li>    
-                                    <li>Date_Time</li>
-                                    <li>Language_Select</li>
+                                    <li class="_navitems">Username_LicenseInfo</li>    
+                                    <li class="_navitems">Date_Time</li>
+                                    <li class="_navitems">Language_Select</li>
                                 </ul>
                         </div>
                     </nav>
-                <div class="container _container">
-                    <h1 class="_intromsg">Welcome to ServiceDesk Plus (SDP), a comprehensive but easy to use IT Help desk and Asset management software with integrated Change and Project management modules.
-                    </h1>
-                    {{outlet}}
+                <div class="row">
+                    <div class="container _container col-md-10 col-md-offset-1">
+                    
+                        {{outlet}}
+                    </div>
                 </div>
             </div>
         </script>
 
         <script type="text/x-handlebars" id="index">
-            <ul>
+            <h1 class="_intromsg">Welcome to ServiceDesk Plus (SDP), a comprehensive but easy to use IT Help desk and Asset management software with integrated Change and Project management modules.
+            </h1>
+            <div class="text-center">
+                <ul class="_features list-unstyled clearfix">
                 {{#each}}
-                    <li>{{icon}}</li>
-                    <li>{{title}}</li>
-                    <li>{{content}}</li>
-                    <li>{{status}}</li>
+                    {{#link-to '' tagName='li'}}
+                        <i>{{icon}}</i>
+                        <h3>{{title}}</h3>
+                        <p>{{content}}</p>
+                    {{/link-to}}
                 {{/each}}
             </ul>
+            </div>  
         </script>
         
         <script src="js/libs/jquery-1.10.2.js"></script>

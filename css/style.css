@@ -1,0 +1,57 @@
+._navitems {
+    padding: 15px;
+}
+
+body {
+    background-color: #f4f3f1;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+._container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 18px 0px rgba(152, 152, 152, 0.294);
+    padding: 10px 50px 65px;
+    margin-top: 15px;
+}
+
+._intromsg {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    padding: 0 20px 40px;
+    margin: 0;
+}
+
+._features li {
+    float: left;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 18px 0px rgba(152, 152, 152, 0.294);
+    position: relative;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 20px 15px;
+    margin: 0 30px 30px 0;
+}
+
+._features li:nth-child(3n-2) {
+    margin-left: 40px;
+}
+
+._features li:nth-child(3n) {
+    margin-right: 0;
+}
+
+._features li h3 {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+}
+
